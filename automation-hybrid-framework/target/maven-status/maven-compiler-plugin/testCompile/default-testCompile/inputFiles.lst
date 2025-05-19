@@ -2,5 +2,7 @@ C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\pages
 C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\utilities\SeleniumActions.java
 C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\stepdefinitions\login.java
 C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\base\BaseTest.java
+C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\utilities\ExecutionHooks.java
 C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\testrunners\TestRunner.java
 C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\utilities\BrowserIntialization.java
+C:\Users\aamar\eclipse-workspace\automation-hybrid-framework\src\test\java\utilities\ConfigReader.java
