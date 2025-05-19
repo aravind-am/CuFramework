@@ -1,6 +1,8 @@
 base\BaseTest.class
 stepdefinitions\login.class
+utilities\ExecutionHooks.class
 testrunners\TestRunner.class
 pages\loginPage.class
 utilities\SeleniumActions.class
+utilities\ConfigReader.class
 utilities\BrowserIntialization.class
