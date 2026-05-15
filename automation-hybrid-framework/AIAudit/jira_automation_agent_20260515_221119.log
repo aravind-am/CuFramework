@@ -1,0 +1,18 @@
+Jira Automation Agent Audit
+Timestamp: 2026-05-15T22:11:19
+Mode: applied
+JQL: labels = "AutomationCandidate" AND status = "New" ORDER BY updated DESC
+
+Planned changes:
+- Action: update
+  Jira: QA-101
+  Path: src\test\resources\features\qa-101_valid_user_can_log_in.feature
+  Reason: Sync generated Cucumber feature with the latest Jira Gherkin.
+- Action: update
+  Jira: QA-101
+  Path: src\test\java\stepdefinitions\Qa101ValidUserCanLogInSteps.java
+  Reason: Sync generated Java step definitions with the latest Jira Gherkin.
+
+Results:
+- updated: C:\Users\aamar\eclipse-workspace\CuFramework\automation-hybrid-framework\src\test\resources\features\qa-101_valid_user_can_log_in.feature
+- updated: C:\Users\aamar\eclipse-workspace\CuFramework\automation-hybrid-framework\src\test\java\stepdefinitions\Qa101ValidUserCanLogInSteps.java
