@@ -1,26 +1,26 @@
 package pages;
 
+import java.util.Objects;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utilities.SeleniumActions;
 
-public class loginPage {
-	private WebDriver driver;
-    private SeleniumActions actions;
+public class LoginPage {
+    private static final By USERNAME_FIELD = By.id("username");
+    private static final By PASSWORD_FIELD = By.id("password");
+    private static final By LOGIN_BUTTON = By.id("login");
 
-    public loginPage(WebDriver driver) {
-        this.driver = driver;
-        this.actions = new SeleniumActions(driver);
+    private final SeleniumActions actions;
+
+    public LoginPage(WebDriver driver) {
+        this.actions = new SeleniumActions(Objects.requireNonNull(driver, "driver must not be null"));
     }
 
-    private By usernameField = By.id("username");
-    private By passwordField = By.id("password");
-    private By loginButton = By.id("login");
-
     public void login(String username, String password) {
-        actions.sendKeys(usernameField, username);
-        actions.sendKeys(passwordField, password);
-        actions.click(loginButton);
+        actions.sendKeys(USERNAME_FIELD, username);
+        actions.sendKeys(PASSWORD_FIELD, password);
+        actions.click(LOGIN_BUTTON);
     }
 }
