@@ -9,8 +9,8 @@ public class ConfigReader {
 
     static {
         try(InputStream fis = ConfigReader.class.getResourceAsStream("/config/config.properties")) {
+        	properties = new Properties();
             if(fis != null) {
-            	 //properties = new Properties();
                  properties.load(fis);
             }
            

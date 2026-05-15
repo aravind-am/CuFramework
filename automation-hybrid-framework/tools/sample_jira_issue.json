@@ -1,0 +1,6 @@
+{
+  "key": "QA-101",
+  "summary": "Valid user can log in",
+  "testType": "Cucumber",
+  "gherkin": "Scenario: Valid user can log in\n  Given I launch the browser\n  When I open the login page\n  And I enter username \"admin\" and password \"admin123\"\n  Then I should see the homepage"
+}

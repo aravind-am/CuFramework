@@ -36,6 +36,7 @@ public class ExecutionHooks {
 	}
 	
 	public ExecutionHooks() {
+		filePath = ConfigReader.getProperty("Scenarios");
 		scenarioMap = getScenarioExecutions(filePath, "Scenarios");
 	}
 	
@@ -43,9 +44,9 @@ public class ExecutionHooks {
 	public static void getTestScenarios(Scenario scenario) {
 		String scenarioName = scenario.getName();
 		
-		String executionFlag = scenarioMap.getOrDefault(scenarioName, "N");
+		String executionFlag = scenarioMap.get(scenarioName);
 		
-		if(!executionFlag.equalsIgnoreCase("Y")) {
+		if(executionFlag != null && !executionFlag.equalsIgnoreCase("Y")) {
 			System.out.println("Skipping scenario....>"+scenarioName);
 			throw new io.cucumber.java.PendingException("Skipped by execution flag in Excel");
 		}
